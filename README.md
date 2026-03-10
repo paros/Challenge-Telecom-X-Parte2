@@ -14,7 +14,7 @@ Entrenamiento y evaluación de múltiples modelos
 Análisis de interpretabilidad con SHAP values
 Generación de recomendaciones estratégicas accionables
 
-##🎯 Objetivo
+## 🎯 Objetivo
 Desarrollar un modelo de clasificación que permita identificar clientes con alta probabilidad de cancelación, con el propósito de implementar acciones que reduzcan la tasa de evasión del 26,5%.
 
 
@@ -23,12 +23,9 @@ Desarrollar un modelo de clasificación que permita identificar clientes con alt
 TelecomX-ML-Prediction/
 │
 
-├── TelecomX_Parte2_DPuebla.ipynb 
-# Notebook principal (ML Pipeline)
-├── telecomx_limpio.csv          
-# Dataset procesado (generado en Parte 1)
-├── README.md       
-# Este archivo
+├── TelecomX_Parte2_DPuebla.ipynb # Notebook principal (ML Pipeline)
+├── telecomx_limpio.csv          # Dataset procesado (generado en Parte 1)
+├── README.md       # Este archivo
 └── papeline_machine_leraning.png   # Diagrama del pipeline ML
 
 ## 📊 Preparación de los datos
