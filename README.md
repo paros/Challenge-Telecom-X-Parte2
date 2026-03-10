@@ -3,6 +3,7 @@
 Parte 2: Modelado Predictivo y Sistema de Alerta Temprana
 
 Autor: Patricia Aros
+Fecha: Marzo 2026
 
 ## 📌 Descripción del proyecto
 Este proyecto está asociado la segunda fase del análisis de evasión de clientes de Telecom X, enfocándose en la construcción de modelos predictivos de Machine Learning capaces de anticipar qué clientes tienen mayor probabilidad de cancelar sus servicios.
@@ -17,12 +18,12 @@ Generación de recomendaciones estratégicas accionables
 ## 🎯 Objetivo
 Desarrollar un modelo de clasificación que permita identificar clientes con alta probabilidad de cancelación, con el propósito de implementar acciones que reduzcan la tasa de evasión del 26,5%.
 
-## Tecnologías y Librerías
-Preprocesamiento: Pandas, NumPy, Scikit-learn
-Visualización: Matplotlib, Seaborn, Plotly
-Modelado: Random Forest, XGBoost, Logistic Regression
-Interpretabilidad: SHAP (SHapley Additive exPlanations)
-Evaluación: Scikit-learn Metrics, Confusion Matrix, ROC-AUC
+## 🛠️ Tecnologías y Librerías
+- Preprocesamiento: Pandas, NumPy, Scikit-learn
+- Visualización: Matplotlib, Seaborn, Plotly
+- Modelado: Random Forest, XGBoost, Logistic Regression
+- Interpretabilidad: SHAP (SHapley Additive exPlanations)
+- Evaluación: Scikit-learn Metrics, Confusion Matrix, ROC-AUC
 
 ## 🗂️ Estructura del Proyecto
 
