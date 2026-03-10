@@ -1,7 +1,5 @@
 # Challenge-Telecom-X Parte2
-
-## Predicción de Evasión de Clientes 
-## TelecomX 
+## Predicción de Evasión de Clientes - TelecomX 
 Parte 2: Modelado Predictivo y Sistema de Alerta Temprana
 
 Autor: Patricia Aros
@@ -24,9 +22,13 @@ Desarrollar un modelo de clasificación que permita identificar clientes con alt
 
 TelecomX-ML-Prediction/
 │
-├── TelecomX_Parte2_DPuebla.ipynb    # Notebook principal (ML Pipeline)
-├── telecomx_limpio.csv              # Dataset procesado (generado en Parte 1)
-├── README.md                        # Este archivo
+
+├── TelecomX_Parte2_DPuebla.ipynb 
+# Notebook principal (ML Pipeline)
+├── telecomx_limpio.csv          
+# Dataset procesado (generado en Parte 1)
+├── README.md       
+# Este archivo
 └── papeline_machine_leraning.png   # Diagrama del pipeline ML
 
 ## 📊 Preparación de los datos
@@ -49,7 +51,9 @@ El modelo Random Forest mostró un desempeño superior para predecir la cancelac
 A partir de los resultados obtenidos, se proponen las siguientes estrategias orientadas a reducir la cancelación de clientes y fortalecer la retención:
 
 i) Fomentar la contratación de planes de mayor duración, con el fin de aumentar el compromiso y la permanencia de los clientes.
+
 ii) Implementar programas de fidelización dirigidos a clientes nuevos, especialmente durante los primeros meses de servicio.
+
 iii) Ofrecer beneficios o descuentos a clientes con cargos mensuales elevados, con el objetivo de mejorar la percepción de valor del servicio.
 
 
