@@ -17,6 +17,12 @@ Generación de recomendaciones estratégicas accionables
 ## 🎯 Objetivo
 Desarrollar un modelo de clasificación que permita identificar clientes con alta probabilidad de cancelación, con el propósito de implementar acciones que reduzcan la tasa de evasión del 26,5%.
 
+## Tecnologías y Librerías
+Preprocesamiento: Pandas, NumPy, Scikit-learn
+Visualización: Matplotlib, Seaborn, Plotly
+Modelado: Random Forest, XGBoost, Logistic Regression
+Interpretabilidad: SHAP (SHapley Additive exPlanations)
+Evaluación: Scikit-learn Metrics, Confusion Matrix, ROC-AUC
 
 ## 🗂️ Estructura del Proyecto
 
