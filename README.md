@@ -27,7 +27,7 @@ Desarrollar un modelo de clasificación que permita identificar clientes con alt
 
 ## 🗂️ Estructura del Proyecto
 
-#TelecomX-ML-Prediction/
+## TelecomX-ML-Prediction/
 
 │
 
