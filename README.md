@@ -35,6 +35,24 @@ Desarrollar un modelo de clasificación que permita identificar clientes con alt
 ## 📊 Preparación de los datos
 
 
+## Comparación de los modelos
+
+Los tres modelos tienen capacidad real para distinguir entre clientes que abandonan el servicio y los que permanecen.
+
+En términos generales:
+AUC entre 0.80 y 0.90 → modelo muy bueno
+AUC > 0.90 → modelo excelente
+
+### 🏆 Comparación entre modelos
+Modelo	ROC-AUC	Interpretación
+Regresión Logística	0.8431	Mejor capacidad predictiva
+XGBoost	0.8414	Muy similar al mejor
+Random Forest	0.8277	Buen desempeño pero ligeramente inferior
+
+Conclusión: 
+i) Regresión Logística presenta el mayor ROC-AUC, por lo que es el modelo con mejor capacidad para diferenciar clientes que abandonan y los que permanecen.
+ii) XGBoost obtiene un rendimiento prácticamente equivalente, lo que sugiere que ambos modelos son adecuados para el problema.
+iii) Random Forest también muestra buen desempeño, aunque ligeramente menor que los otros dos modelos.
 
 ## 📌 Conclusiones
 El análisis permitió identificar variables clave que influyen en la cancelación de clientes.
@@ -46,7 +64,7 @@ El análisis permitió identificar variables clave que influyen en la cancelaci�
 • Cargos mensuales: > $70 USD   
 • Servicios adicionales: < 2  
 
-El modelo Random Forest mostró un desempeño superior para predecir la cancelación, al capturar relaciones más complejas entre las variables.
+El modelo de Regresión Logística mostró un desempeño superior para predecir la cancelación, tiene mejor capacidad para diferenciar clientes que abandonan y los que permanecen.
 
 ## 💡 Recomendaciones para Telecom X
 A partir de los resultados obtenidos, se proponen las siguientes estrategias orientadas a reducir la cancelación de clientes y fortalecer la retención:
