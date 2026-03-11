@@ -29,11 +29,10 @@ Desarrollar un modelo de clasificación que permita identificar clientes con alt
 
 TelecomX-ML-Prediction/
 │
-
-├── TelecomX_Parte2_DPuebla.ipynb # Notebook principal (ML Pipeline)
+├── TelecomX_Parte2_Final.ipynb # Notebook principal
 ├── telecomx_limpio.csv          # Dataset procesado (generado en Parte 1)
 ├── README.md       # Este archivo
-└── papeline_machine_leraning.png   # Diagrama del pipeline ML
+
 
 ## 📊 Preparación de los datos
 
