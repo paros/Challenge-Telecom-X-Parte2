@@ -32,10 +32,51 @@ Desarrollar un modelo de clasificación que permita identificar clientes con alt
 - README.md                     # Este archivo
 
 
-## 📊 Preparación de los datos
+## 📊 Flujo de trabajo
+
+## Etapa 1 — Preparación de Datos
+
+| Proceso | Técnica aplicada | Objetivo |
+|--------|------------------|---------|
+| Codificación binaria | `Label Encoding: {'Sí': 1, 'No': 0}` | Convertir variables Sí/No a formato numérico |
+| Codificación categórica | One-Hot Encoding (`drop_first=True`) | Transformar variables categóricas como `Tipo_Contrato`, `Metodo_Pago`, etc. |
+| Normalización | `StandardScaler (μ=0, σ=1)` | Escalar variables numéricas (`Cargos_Mensuales`, `Cargos_Totales`, `Meses_Contrato`) |
+| División de datos | Train (80%) / Test (20%) con `stratify` | Mantener la proporción de la variable objetivo `Evasion_Binaria` |
+
+---
+
+## Etapa 2 — Análisis de Correlación
+
+- Construcción de **matriz de correlación completa** considerando la variable objetivo `Evasion_Binaria`.
+- Detección de **multicolinealidad** utilizando un umbral de correlación `> 0.85`.
+- Identificación de las **10 variables más correlacionadas con la evasión**.
+- Visualización mediante **heatmaps y gráficos de barras** para facilitar la interpretación.
+
+---
+
+## Etapa 3 — Entrenamiento de Modelos
+
+Se entrenaron **tres modelos de clasificación supervisada** para predecir la evasión de clientes.
+
+| Modelo | Tipo |
+|------|------|
+| Regresión Logística | Lineal |
+| Random Forest | Ensemble (Bagging) |
+| XGBoost | Ensemble (Boosting) |
+---
+
+## Etapa 4 — Evaluación de Modelos
+
+Para evaluar el desempeño de los modelos se calcularon diversas métricas de clasificación:
+
+- ✅ **Accuracy** → Porcentaje total de predicciones correctas del modelo.  
+- ✅ **Precision** → De los clientes predichos como evasión, cuántos realmente abandonan.  
+- ✅ **Recall** → De todos los clientes que abandonan, cuántos logra detectar el modelo.  
+- ✅ **F1-Score** → Media armónica entre *Precision* y *Recall*, útil cuando las clases están desbalanceadas.  
+- ✅ **ROC-AUC** → Capacidad del modelo para discriminar entre clientes que evaden y los que permanecen.
 
 
-## Comparación de los modelos
+## 📌Comparación de los modelos
 
 Los tres modelos tienen capacidad real para distinguir entre clientes que abandonan el servicio y los que permanecen.
 
@@ -51,7 +92,9 @@ Random Forest	0.8277	Buen desempeño pero ligeramente inferior
 
 Conclusión: 
 i) Regresión Logística presenta el mayor ROC-AUC, por lo que es el modelo con mejor capacidad para diferenciar clientes que abandonan y los que permanecen.
+
 ii) XGBoost obtiene un rendimiento prácticamente equivalente, lo que sugiere que ambos modelos son adecuados para el problema.
+
 iii) Random Forest también muestra buen desempeño, aunque ligeramente menor que los otros dos modelos.
 
 ## 📌 Conclusiones
